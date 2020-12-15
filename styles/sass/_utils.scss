@@ -12,7 +12,8 @@ h1,
 h2, 
 h3,
 nav li,
-p {
+p,
+i {
     color: $secondary;
 }
 
@@ -24,6 +25,7 @@ h4,
 }
 
 header ul a,
-.headerRightDetailsBox p {
+.headerRightDetailsBox p,
+.aboutContentBox p {
     color: $quaternary;
 }
