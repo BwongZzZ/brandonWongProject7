@@ -257,22 +257,21 @@ body {
 h1,
 h2,
 h3,
-h4,
+nav li,
 p {
   color: #FFF;
 }
 
 h1 span,
-h3 span {
+h3 span,
+h4,
+.headerContentBox a {
   color: #53A2FF;
 }
 
-header ul a {
+header ul a,
+.headerRightDetailsBox p {
   color: #7F7F7F;
-}
-
-nav li {
-  color: #FFF;
 }
 
 html {
@@ -292,15 +291,16 @@ h4 {
 
 h1 {
   font-size: 8rem;
-  width: 35%;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h4 {
@@ -313,6 +313,10 @@ p {
 
 li {
   font-size: 1.8rem;
+}
+
+.headerLeftDetailsBox a {
+  font-size: 2rem;
 }
 
 nav,
@@ -340,4 +344,54 @@ nav a {
 
 .pipe {
   font-size: 3.5rem;
+  margin: 0 20px;
+}
+
+.headerContentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.headerLeftDetailsBox,
+.headerRightDetailsBox {
+  width: 30%;
+}
+
+.headerImgBox {
+  width: 20%;
+}
+
+.headerContentBox img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: #53A2FF;
+  padding: 10px;
+}
+
+.headerLeftDetailsBox li {
+  margin-bottom: 20px;
+}
+
+.headerLeftDetailsBox li:first-child {
+  margin-top: 30px;
+}
+
+h2,
+h4,
+.headerRightDetailsBox p {
+  padding-bottom: 20px;
+}
+
+.headerRightDetailsBox p {
+  line-height: 3rem;
 }

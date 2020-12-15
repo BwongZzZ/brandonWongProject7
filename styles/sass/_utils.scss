@@ -11,20 +11,19 @@ body {
 h1, 
 h2, 
 h3,
-h4,
+nav li,
 p {
     color: $secondary;
 }
 
 h1 span,
-h3 span {
+h3 span,
+h4,
+.headerContentBox a {
     color: $primary;
 }
 
-header ul a {
+header ul a,
+.headerRightDetailsBox p {
     color: $quaternary;
-}
-
-nav li {
-    color: $secondary;
 }

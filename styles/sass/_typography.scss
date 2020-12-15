@@ -16,15 +16,16 @@ h4 {
 
 h1 {
     font-size: 8rem;
-    width: 35%;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 h3 {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 h4 {
@@ -39,4 +40,7 @@ li {
     font-size: 1.8rem;
 }
 
+.headerLeftDetailsBox a {
+    font-size: 2rem;
+}
 
