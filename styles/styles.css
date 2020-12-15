@@ -270,7 +270,8 @@ i {
 h1 span,
 h3 span,
 h4,
-.headerContentBox a {
+.headerContentBox a,
+footer p {
   color: #53A2FF;
 }
 
@@ -432,7 +433,8 @@ h4,
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1400px;
+  max-width: 1450px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -446,7 +448,7 @@ h4,
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 25px;
-  margin: 0 70px;
+  margin: 0 50px;
 }
 
 i {
@@ -477,11 +479,6 @@ i,
   height: 180px;
 }
 
-.javascriptBox p,
-.laptopBox p {
-  width: 100%;
-}
-
 li.javascriptBox {
   margin-bottom: 9px;
 }
@@ -492,4 +489,19 @@ li.gitBox {
 
 .laptopBox p {
   padding-top: 20px;
+}
+
+.fa-wifi {
+  rotate: 215deg;
+  translate: 15px -5px;
+  font-size: 9rem;
+}
+
+.portfolioContentBox img {
+  width: 50%;
+}
+
+footer p {
+  padding: 20px 0;
+  text-align: center;
 }

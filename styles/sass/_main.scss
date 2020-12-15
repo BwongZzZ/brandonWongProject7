@@ -3,7 +3,6 @@
 .aboutContentBox p {
     padding-top: 20px;
     padding-bottom: 100px;
-    // width: 50%;
 }
 
 // Skills Styles
@@ -13,7 +12,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1450px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
-    margin: 0 70px;
+    margin: 0 50px;
 }
 
 i {
@@ -53,11 +53,6 @@ i,
     height: 180px;
 }
 
-.javascriptBox p,
-.laptopBox p {
-    width: 100%;
-}
-
 li.javascriptBox {
     margin-bottom: 9px;
 }
@@ -70,5 +65,25 @@ li.gitBox {
     padding-top: 20px;
 }
 
+.fa-wifi {
+    rotate: 215deg;
+    translate: 15px -5px;
+    font-size: 9rem;
+}
+
+// used to cover wifi font awesome to make icon look like jQuery
+// .fa-stop {
+//     rotate: 137deg;
+//     translate: 336px -235px;
+//     font-size: 9rem;
+//     color: $quinary;
+//     // color: orange;
+//     z-index: 10;
+// }
+
 
 // Portfolio Styles
+
+.portfolioContentBox img {
+    width: 50%;
+}
