@@ -270,6 +270,7 @@ i,
 }
 
 h1 span,
+.headerContentBox span,
 h3 span,
 h4,
 .headerContentBox a,
@@ -304,6 +305,11 @@ h5 {
   font-family: 'Fredoka One', cursive;
 }
 
+h2,
+h4 {
+  margin-bottom: 40px;
+}
+
 h1 {
   font-size: 8rem;
   width: 100%;
@@ -316,6 +322,7 @@ h2 {
 
 h3 {
   font-size: 6rem;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -323,9 +330,17 @@ h4 {
   text-align: center;
 }
 
+h4 span {
+  border-bottom: #7F7F7F solid 7px;
+}
+
 h5 {
   font-size: 4rem;
   padding-bottom: 30px;
+}
+
+h5 span {
+  border-bottom: #53A2FF solid 7px;
 }
 
 p {
@@ -362,12 +377,22 @@ nav {
 nav i {
   font-size: 4rem;
   padding: 30px 0px;
+  margin-bottom: 20px;
   width: 50px;
+  height: 80px;
 }
 
 nav a {
   padding: 0 20px;
   font-size: 3rem;
+}
+
+nav a span:hover,
+nav a:focus,
+nav i:hover,
+nav i:focus {
+  color: #53A2FF;
+  border-bottom: #53A2FF solid 7px;
 }
 
 .pipe {
@@ -390,48 +415,46 @@ nav a {
   margin-bottom: 120px;
 }
 
-.headerLeftDetailsBox,
-.headerRightDetailsBox {
-  width: 30%;
+.headerContentBox h4 {
+  text-align: left;
+  margin-bottom: 40px;
 }
 
-.headerImgBox {
-  width: 30%;
-}
-
-.headerContentBox img {
+.aboutContentBox img {
   width: 100%;
   border-radius: 50%;
   background-color: #53A2FF;
   padding: 10px;
 }
 
-.headerLeftDetailsBox li {
-  margin-bottom: 20px;
+.aboutContentBox {
+  margin-bottom: 100px;
 }
 
-.headerLeftDetailsBox li:first-child {
-  margin-top: 30px;
+.aboutImgBox {
+  width: 40%;
 }
 
-.headerRightDetailsBox h4 {
-  text-align: left;
+.aboutImgBox img {
+  width: 100%;
 }
 
-h2,
-h4,
-.headerRightDetailsBox p {
-  padding-bottom: 20px;
-}
-
-.fa-arrow-alt-circle-down {
-  margin-top: 10px;
-  font-size: 3rem;
+.aboutContentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .aboutContentBox p {
   padding-top: 20px;
   padding-bottom: 100px;
+}
+
+.aboutParaBox {
+  width: 40%;
 }
 
 .skillsContentBox {
@@ -470,6 +493,11 @@ i {
   height: 100px;
 }
 
+i:hover,
+i:focus {
+  color: #53A2FF;
+}
+
 .skillsContentBox p {
   padding-top: 10px;
 }
@@ -502,12 +530,6 @@ li.gitBox {
 
 .laptopBox p {
   padding-top: 20px;
-}
-
-.fa-wifi {
-  rotate: 215deg;
-  translate: 15px -5px;
-  font-size: 9rem;
 }
 
 .portfolioContentBox {
@@ -556,21 +578,32 @@ li.gitBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projectIconBox i {
   font-size: 5rem;
   width: 50px;
   height: 50px;
+  margin: 10px;
 }
 
 .projectLinkBox li {
   padding-right: 10px;
   list-style-type: none;
+}
+
+.projectLinkBox a,
+.pipePrimary {
+  font-size: 2.5rem;
 }
 
 .portfolioContentBox p,
@@ -582,10 +615,40 @@ li.gitBox {
   margin: 0 10px;
 }
 
+.project3DetailBox .projectIconBox li:last-child {
+  margin-top: 10px;
+}
+
 .project1ImgBox,
 .project3ImgBox,
 .project6ImgBox {
   width: 40%;
+}
+
+.backToTop {
+  margin-bottom: 50px;
+}
+
+.backToTop p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.backToTop a {
+  color: #7F7F7F;
+  height: 35px;
+}
+
+.projectLinkBox a:hover,
+.projectLinkBox a:focus,
+.backToTop a:hover,
+.backToTop a:focus {
+  color: #53A2FF;
+  border-bottom: #53A2FF solid 7px;
 }
 
 footer p {

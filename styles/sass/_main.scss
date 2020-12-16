@@ -1,9 +1,31 @@
+.aboutContentBox {
+    margin-bottom: 100px;
+}
+
 // About Styles
+.aboutImgBox {
+    width: 40%;
+}
+
+.aboutImgBox img {
+    width: 100%;
+}
+
+.aboutContentBox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;    
+}
 
 .aboutContentBox p {
     padding-top: 20px;
     padding-bottom: 100px;
 }
+
+.aboutParaBox {
+    width: 40%;
+}
+
 
 // Skills Styles
 
@@ -29,6 +51,11 @@ i {
     font-size: 10rem;
     width: 100px;
     height: 100px;
+}
+
+i:hover,
+i:focus {
+    color: $primary;
 }
 
 .skillsContentBox p {
@@ -63,12 +90,6 @@ li.gitBox {
 
 .laptopBox p {
     padding-top: 20px;
-}
-
-.fa-wifi {
-    rotate: 215deg;
-    translate: 15px -5px;
-    font-size: 9rem;
 }
 
 // Portfolio Styles
@@ -107,13 +128,16 @@ li.gitBox {
 .projectIconBox,
 .projectLinkBox {
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .projectIconBox i {
     font-size: 5rem;
     width: 50px;
     height: 50px;
+    margin: 10px;
 }
 
 .projectLinkBox li {
@@ -121,13 +145,22 @@ li.gitBox {
     list-style-type: none;
 }
 
+.projectLinkBox a,
+.pipePrimary {
+    font-size: 2.5rem;
+}
+
 .portfolioContentBox p,
 .projectIconBox {
     margin-bottom: 20px;
-} 
+}
 
 .projectIconBox li {
     margin: 0 10px;
+}
+
+.project3DetailBox .projectIconBox li:last-child {
+    margin-top: 10px;
 }
 
 .project1ImgBox,
@@ -136,3 +169,24 @@ li.gitBox {
     width: 40%;
 }
 
+.backToTop {
+    margin-bottom: 50px;
+}
+
+.backToTop p {
+    display: flex;
+    justify-content: center;
+}
+
+.backToTop a {
+    color: $quaternary;
+    height: 35px;
+}
+
+.projectLinkBox a:hover,
+.projectLinkBox a:focus,
+.backToTop a:hover,
+.backToTop a:focus {
+    color: $primary;
+    border-bottom: $primary solid 7px;
+}
