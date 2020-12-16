@@ -261,9 +261,11 @@ body {
 h1,
 h2,
 h3,
+h5,
 nav li,
 p,
-i {
+i,
+.pipePrimary {
   color: #FFF;
 }
 
@@ -277,7 +279,12 @@ footer p {
 
 header ul a,
 .headerRightDetailsBox p,
-.aboutContentBox p {
+.aboutContentBox p,
+.skillsContentBox li p,
+.project1DetailBox p,
+.project3DetailBox p,
+.project6DetailBox p,
+.projectLinkBox a {
   color: #7F7F7F;
 }
 
@@ -292,7 +299,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'Fredoka One', cursive;
 }
 
@@ -303,16 +311,21 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 h3 {
-  font-size: 4.5rem;
+  font-size: 6rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
+}
+
+h5 {
+  font-size: 4rem;
+  padding-bottom: 30px;
 }
 
 p {
@@ -497,8 +510,82 @@ li.gitBox {
   font-size: 9rem;
 }
 
-.portfolioContentBox img {
-  width: 50%;
+.portfolioContentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.project1DetailBox,
+.project6DetailBox {
+  margin-right: 50px;
+}
+
+.project3DetailBox {
+  margin-left: 50px;
+}
+
+.project1DetailBox,
+.project3DetailBox,
+.project6DetailBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.portfolioContentBox p,
+.portfolioContentBox img,
+.project3ImgBox img {
+  width: 100%;
+}
+
+.projectIconBox,
+.projectLinkBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projectIconBox i {
+  font-size: 5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.projectLinkBox li {
+  padding-right: 10px;
+  list-style-type: none;
+}
+
+.portfolioContentBox p,
+.projectIconBox {
+  margin-bottom: 20px;
+}
+
+.projectIconBox li {
+  margin: 0 10px;
+}
+
+.project1ImgBox,
+.project3ImgBox,
+.project6ImgBox {
+  width: 40%;
 }
 
 footer p {

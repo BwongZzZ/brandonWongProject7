@@ -10,7 +10,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Fredoka One', cursive;
 }
 
@@ -21,16 +22,21 @@ h1 {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 h3 {
-    font-size: 4.5rem;
+    font-size: 6rem;
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
+}
+
+h5 {
+    font-size: 4rem;
+    padding-bottom: 30px;
 }
 
 p {

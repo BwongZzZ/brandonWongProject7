@@ -11,9 +11,11 @@ body {
 h1, 
 h2, 
 h3,
+h5,
 nav li,
 p,
-i {
+i,
+.pipePrimary {
     color: $secondary;
 }
 
@@ -27,6 +29,11 @@ footer p {
 
 header ul a,
 .headerRightDetailsBox p,
-.aboutContentBox p {
+.aboutContentBox p,
+.skillsContentBox li p,
+.project1DetailBox p,
+.project3DetailBox p,
+.project6DetailBox p,
+.projectLinkBox a {
     color: $quaternary;
 }

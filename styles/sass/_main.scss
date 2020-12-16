@@ -71,19 +71,68 @@ li.gitBox {
     font-size: 9rem;
 }
 
-// used to cover wifi font awesome to make icon look like jQuery
-// .fa-stop {
-//     rotate: 137deg;
-//     translate: 336px -235px;
-//     font-size: 9rem;
-//     color: $quinary;
-//     // color: orange;
-//     z-index: 10;
-// }
-
-
 // Portfolio Styles
 
-.portfolioContentBox img {
-    width: 50%;
+.portfolioContentBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
+
+.project1DetailBox,
+.project6DetailBox {
+    margin-right: 50px; 
+}
+
+.project3DetailBox {
+    margin-left: 50px;
+}
+
+.project1DetailBox,
+.project3DetailBox,
+.project6DetailBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.portfolioContentBox p,
+.portfolioContentBox img,
+.project3ImgBox img {
+    width: 100%;
+}
+
+.projectIconBox,
+.projectLinkBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectIconBox i {
+    font-size: 5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.projectLinkBox li {
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.portfolioContentBox p,
+.projectIconBox {
+    margin-bottom: 20px;
+} 
+
+.projectIconBox li {
+    margin: 0 10px;
+}
+
+.project1ImgBox,
+.project3ImgBox,
+.project6ImgBox {
+    width: 40%;
+}
+
