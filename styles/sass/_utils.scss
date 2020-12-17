@@ -24,6 +24,7 @@ h1 span,
 h3 span,
 h4,
 .headerContentBox a,
+.contactDetailBox p:nth-child(2),
 footer p {
     color: $primary;
 }
@@ -35,6 +36,7 @@ header ul a,
 .project1DetailBox p,
 .project3DetailBox p,
 .project6DetailBox p,
-.projectLinkBox a {
+.projectLinkBox a,
+.contactContentBox p {
     color: $quaternary;
 }

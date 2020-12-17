@@ -159,7 +159,7 @@ li.gitBox {
     margin: 0 10px;
 }
 
-.project3DetailBox .projectIconBox li:last-child {
+.project3DetailBox .projectIconBox li:nth-child(6) {
     margin-top: 10px;
 }
 
@@ -178,9 +178,84 @@ li.gitBox {
     justify-content: center;
 }
 
+// Contact Me Styles
+
+.contactDetailBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contactDetailBox div {
+    width: 40%;
+}
+
+.contactDetailBox p,
+.contactContentBox ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contactContentBox p {
+    margin-bottom: 35px;
+}
+
+.contactContentBox i {
+    font-size: 7rem;
+}
+
+.contactContentBox i :hover,
+.contactContentBox i :focus {
+    color: $primary;
+    border-bottom: $primary solid 7px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"] {
+    font-size: 1.5rem;
+    border-radius: 2%;
+    max-width: 400px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    height: 40px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding-left: 4px
+}
+
+textarea {
+    padding: 10px 0 80px 4px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    color: $secondary;
+    background-color: $primary;
+    border: $primary 1px solid;
+}
+
+// backToTop Styles
+
 .backToTop a {
     color: $quaternary;
     height: 35px;
+}
+
+.backToTop {
+    margin-top: 100px;
 }
 
 .projectLinkBox a:hover,

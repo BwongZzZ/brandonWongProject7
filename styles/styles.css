@@ -274,6 +274,7 @@ h1 span,
 h3 span,
 h4,
 .headerContentBox a,
+.contactDetailBox p:nth-child(2),
 footer p {
   color: #53A2FF;
 }
@@ -285,7 +286,8 @@ header ul a,
 .project1DetailBox p,
 .project3DetailBox p,
 .project6DetailBox p,
-.projectLinkBox a {
+.projectLinkBox a,
+.contactContentBox p {
   color: #7F7F7F;
 }
 
@@ -293,7 +295,11 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body,
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"] {
   font-family: 'Hammersmith One', sans-serif;
 }
 
@@ -307,7 +313,7 @@ h5 {
 
 h2,
 h4 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -328,6 +334,7 @@ h3 {
 h4 {
   font-size: 5rem;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 h4 span {
@@ -371,7 +378,7 @@ nav ul {
 }
 
 nav {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 nav i {
@@ -615,7 +622,7 @@ li.gitBox {
   margin: 0 10px;
 }
 
-.project3DetailBox .projectIconBox li:last-child {
+.project3DetailBox .projectIconBox li:nth-child(6) {
   margin-top: 10px;
 }
 
@@ -638,9 +645,94 @@ li.gitBox {
           justify-content: center;
 }
 
+.contactDetailBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactDetailBox div {
+  width: 40%;
+}
+
+.contactDetailBox p,
+.contactContentBox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactContentBox p {
+  margin-bottom: 35px;
+}
+
+.contactContentBox i {
+  font-size: 7rem;
+}
+
+.contactContentBox i :hover,
+.contactContentBox i :focus {
+  color: #53A2FF;
+  border-bottom: #53A2FF solid 7px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"] {
+  font-size: 1.5rem;
+  border-radius: 2%;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  height: 40px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding-left: 4px;
+}
+
+textarea {
+  padding: 10px 0 80px 4px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: #FFF;
+  background-color: #53A2FF;
+  border: #53A2FF 1px solid;
+}
+
 .backToTop a {
   color: #7F7F7F;
   height: 35px;
+}
+
+.backToTop {
+  margin-top: 100px;
 }
 
 .projectLinkBox a:hover,
