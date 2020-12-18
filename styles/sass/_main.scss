@@ -6,6 +6,7 @@
 
 .aboutImgBox {
     width: 40%;
+    margin-bottom: 100px;
 }
 
 .aboutImgBox img {
@@ -25,6 +26,10 @@
 
 .aboutParaBox {
     width: 40%;
+}
+
+.aboutParaBox p:first-child {
+    padding-bottom: 0px
 }
 
 
@@ -263,7 +268,7 @@ input[type="submit"]:focus {
 }
 
 .downPortfolio {
-    width: 800px;
+    width: 100%;
     text-align: center;
     margin-top: 50px;
 }
