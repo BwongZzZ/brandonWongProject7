@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brandon Wong's Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hammersmith+One&display=swap" rel="stylesheet">
@@ -116,7 +117,7 @@
             <!-- Project 1 -->
         <section class="wrapper">
             <h4 id="portfolio"><span>Portfolio</span></h4>
-            <div class="portfolioContentBox">
+            <div class="portfolioContentBox" data-aos="fade-down-right">
                 <div class="project1DetailBox">
                     <h5><span>Animal Refuge</span></h5>
                     <p>This single page animal website uses old school CSS float styling, that was completed in just a week. Demonstrating multiple design layouts and understanding how to effectively apply floats. Comfortable working with older website infestructure that still consist float styling.  
@@ -139,7 +140,7 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="portfolioContentBox">
+            <div class="portfolioContentBox" data-aos="fade-down-left">
                 <div class="project3DetailBox">
                     <h5><span>Treasure Hunt Game</span></h5>
                     <p>Are you an adventurous pirate look for yarrr treasure? Here's a fun treasure hunt game I created, using javaScript to
@@ -167,7 +168,7 @@
             </div>
 
             <!-- Project 6 -->
-            <div class="portfolioContentBox">
+            <div class="portfolioContentBox" data-aos="fade-down-right">
                 <div class="project6DetailBox">
                     <h5><span>Film Buff</span></h5>
                     <p>Are you bilingual? Trilingual? Or trying to learn a new language? Well this website will make learning more enjoyable!
@@ -233,6 +234,10 @@
     <footer>
         <p>Designed By Brandon Wong 2020</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
