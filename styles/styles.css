@@ -791,9 +791,6 @@ footer p {
 }
 
 @media (max-width: 1087px) {
-  .wrapper {
-    max-width: 400px;
-  }
   .fa-bars {
     display: block;
     right: 20px;
