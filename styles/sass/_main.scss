@@ -165,6 +165,8 @@ li.gitBox {
 .project3ImgBox,
 .project6ImgBox {
     width: 40%;
+    margin-bottom: 0;
+    border-radius: 5%;
 }
 
 .backToTop {
@@ -245,10 +247,38 @@ input[type="submit"]:focus {
     border: $primary 1px solid;
 }
 
+// Down Scroll Styles
+
+.downSkills,
+.downPortfolio,
+.downContact{
+    color: $primary;
+    font-size: 3rem;
+}
+
+.downAbout {
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.downPortfolio {
+    width: 800px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.downContact {
+    margin-top: 50px;
+}
+
 // backToTop Styles
 
-.backToTop a {
+.upToTop {
+    font-size: 3rem;
     color: $quaternary;
+    display: flex;
+    justify-content: center;
     height: 35px;
 }
 
@@ -258,8 +288,10 @@ input[type="submit"]:focus {
 
 .projectLinkBox a:hover,
 .projectLinkBox a:focus,
-.backToTop a:hover,
-.backToTop a:focus {
+.backToTop a span:hover,
+.backToTop a span:focus {
     color: $primary;
     border-bottom: $primary solid 7px;
 }
+
+

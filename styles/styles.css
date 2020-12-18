@@ -636,6 +636,8 @@ li.gitBox {
 .project3ImgBox,
 .project6ImgBox {
   width: 40%;
+  margin-bottom: 0;
+  border-radius: 5%;
 }
 
 .backToTop {
@@ -732,8 +734,42 @@ input[type="submit"]:focus {
   border: #53A2FF 1px solid;
 }
 
-.backToTop a {
+.downSkills,
+.downPortfolio,
+.downContact {
+  color: #53A2FF;
+  font-size: 3rem;
+}
+
+.downAbout {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.downPortfolio {
+  width: 800px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.downContact {
+  margin-top: 50px;
+}
+
+.upToTop {
+  font-size: 3rem;
   color: #7F7F7F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 35px;
 }
 
@@ -743,8 +779,8 @@ input[type="submit"]:focus {
 
 .projectLinkBox a:hover,
 .projectLinkBox a:focus,
-.backToTop a:hover,
-.backToTop a:focus {
+.backToTop a span:hover,
+.backToTop a span:focus {
   color: #53A2FF;
   border-bottom: #53A2FF solid 7px;
 }
@@ -880,6 +916,10 @@ footer p {
   form {
     width: 50%;
   }
+  .downContact {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -908,5 +948,14 @@ footer p {
   .project3ImgBox,
   .project6ImgBox {
     width: 250px;
+  }
+  .downAbout,
+  .downSkills,
+  .downPortfolio,
+  .downContact {
+    font-size: 2.5rem;
+  }
+  .downContact {
+    font-size: 2rem;
   }
 }
