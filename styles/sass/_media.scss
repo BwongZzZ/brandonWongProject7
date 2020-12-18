@@ -1,0 +1,192 @@
+// Media Query (max-width: 1087px) Styles
+
+@media (max-width: 1087px) {
+
+    // Bars Icon
+    .fa-bars {
+        display: block;
+        left: 921px;
+        bottom: 680px;
+        font-size: 6rem;
+        color: $secondary;
+        opacity: 1;
+        z-index: 10;
+        position: fixed; 
+    }
+
+    // Checkbox Input Box 
+    input[type="checkbox"] {
+        opacity: 0;
+        width: 87px;
+        height: 87px;
+        left: 904px;
+        bottom: 676px;
+        z-index: 100;    
+        position: fixed;
+    }
+
+    // ul containing nav li's
+    .hideBarMenu {
+        position: absolute;
+        left: 183px;
+        bottom: 753px;
+        background-color: $secondary;
+        padding: 10px 0 0 5px;
+        border-radius: 2%;
+        position: fixed;
+        transition: all 1s ease;
+    }
+
+    .hideBarMenu li {
+        margin: 5px 0;
+    }
+
+    .hideBarMenu a {
+        font-size: 2.8rem;
+    }
+
+    // when input check/uncheck toggle .hideBarMenu 
+    input[type="checkbox"]:checked ~ .hideBarMenu {
+        position: absolute;
+        left: 183px;
+        bottom: 900px;
+        transition: all 1s ease;
+
+    }
+
+    input[type="checkbox"]:hover ~ .fa-bars,
+    input[type="checkbox"]:focus ~ .fa-bars {
+        color: $primary;
+    }
+
+    // About Section Styles
+
+    .aboutContentBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutImgBox {
+        width: 50%
+    }
+
+    .aboutParaBox {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .aboutParaBox p {
+        padding-bottom: 50px;
+    }
+
+    // Portfolio Section Styles
+
+    .portfolioContentBox,
+    .project1DetailBox,
+    .project3DetailBox,
+    .project6DetailBox {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .project1DetailBox,
+    .project3DetailBox,
+    .project6DetailBox{
+        margin-bottom: 30px;
+    }
+
+    .project1ImgBox,
+    .project3ImgBox {
+        margin-bottom: 70px;
+    }
+
+    .project1DetailBox,
+    .project3DetailBox,
+    .project6DetailBox p {
+        text-align: center;
+    }
+
+
+    .project6ImgBox {
+        margin-bottom: 150px;
+    }
+
+    .project3DetailBox h5 {
+        line-height: 6rem;
+    }
+    
+    // Contact Styles
+
+    .contactDetailBox {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .contactDetailBox div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contactDetailBox p {
+        text-align: center;
+    }
+
+    .contactDetailBox i {
+        font-size: 5rem;
+        width: 70px;
+        height: 100px;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+
+// Media Query (max-width: 480px) Styles
+
+@media (max-width: 480px) {
+
+    // Header Styles
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 3.5rem;
+    }
+
+    // About Styles
+
+    .aboutImgBox {
+        width: 80%
+    }
+
+    form {
+        width: 100%;
+    }
+
+    // Portfolio Styles
+
+    .project1DetailBox h5 {
+        line-height: 6rem;
+    }
+
+    .project1ImgBox,
+    .project3ImgBox,
+    .project6ImgBox {
+        width: 250px;
+    }
+}

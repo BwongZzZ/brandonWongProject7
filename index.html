@@ -16,12 +16,14 @@
     <header class="wrapper" id="home">
         <nav>
             <h3>BW<span>.</span></h3>
-            <ul>
+            <input type="checkbox" name="toggle" id="toggle">
+            <i class="fas fa-bars"></i>
+            <ul class="hideBarMenu">
                 <li><a href="./index.html"><span>Home</span></a></li>
                 <li><a href="#about"><span>About</span></a></li>
                 <li><a href="#skills"><span>Skills</span></a></li>
-                <li><a href="#portfolio"><span>Portfolio Pieces</span></a></li>
-                <li><a href="#contact"><span>Contact Me</span></a></li>
+                <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                <li><a href="#contact"><span>Contact</span></a></li>
 <!-- Might remove due to having all contact links and info at bottom of page -->
                 <!-- <li class="pipe">|</li>
                 <li><a href="https://www.linkedin.com/in/brandon-wong-a0ab09173/"><i class="fab fa-linkedin"></i></a></li>
@@ -135,22 +137,15 @@
 
             <!-- Project 3 -->
             <div class="portfolioContentBox">
-                <div class="project3ImgBox">
-                    <img src="./assets/project3TreasureHuntGame.png" alt="Treasure Hunt Game app with pirate map background">
-                </div>
                 <div class="project3DetailBox">
                     <h5><span>Treasure Hunt Game</span></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe deserunt maiores totam consequatur
-                        error, odio omnis amet non magni assumenda quidem, delectus, voluptas veritatis tempora voluptate aliquid velit
-                        dignissimos?
+                        error, odio omnis amet non magni assumenda quidem, delectus, voluptas veritatis tempora voluptate aliquid
+                        velit dignissimos?
                     </p>
                     <ul class="projectIconBox">
                         <li><i class="fab fa-html5"></i></li>
                         <li><i class="fab fa-css3-alt"></i></li>
-                        <li><i class="fab fa-js"></i></li>
-                        <li><i class="fab fa-sass"></i></li>
-                        <li><i class="fas fa-cog"></i></li>
-                        <li><i class="devicon-jquery-plain"></i></li>
                         <li><i class="fas fa-universal-access"></i></li>
                         <li><i class="fas fa-laptop-code"></i></li>
                     </ul>
@@ -159,6 +154,9 @@
                         <li class="pipePrimary">|</li>
                         <li><a href="https://github.com/BwongZzZ/brandonWongProject3">Git Hub</a></li>
                     </div>
+                </div>
+                <div class="project3ImgBox">
+                    <img src="./assets/project3TreasureHuntGame.png" alt="Treasure Hunt Game app with pirate map background">
                 </div>
             </div>
 
@@ -194,7 +192,7 @@
         </section>
         <!-- Contact Me Section -->
         <section class="wrapper">
-            <h4 id="contact"><span>Contact Me</span></h4>
+            <h4 id="contact"><span>Contact</span></h4>
             <div class="contactContentBox">
                 <div class="contactDetailBox">
                     <div>

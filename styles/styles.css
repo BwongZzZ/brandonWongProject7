@@ -381,6 +381,10 @@ nav {
   padding: 60px 0;
 }
 
+nav li {
+  padding-bottom: 10px;
+}
+
 nav i {
   font-size: 4rem;
   padding: 30px 0px;
@@ -400,6 +404,11 @@ nav i:hover,
 nav i:focus {
   color: #53A2FF;
   border-bottom: #53A2FF solid 7px;
+}
+
+input[type="checkbox"],
+.fa-bars {
+  opacity: 0;
 }
 
 .pipe {
@@ -553,12 +562,9 @@ li.gitBox {
 }
 
 .project1DetailBox,
+.project3DetailBox,
 .project6DetailBox {
   margin-right: 50px;
-}
-
-.project3DetailBox {
-  margin-left: 50px;
 }
 
 .project1DetailBox,
@@ -746,4 +752,161 @@ input[type="submit"]:focus {
 footer p {
   padding: 20px 0;
   text-align: center;
+}
+
+@media (max-width: 1087px) {
+  .fa-bars {
+    display: block;
+    left: 921px;
+    bottom: 680px;
+    font-size: 6rem;
+    color: #FFF;
+    opacity: 1;
+    z-index: 10;
+    position: fixed;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 87px;
+    height: 87px;
+    left: 904px;
+    bottom: 676px;
+    z-index: 100;
+    position: fixed;
+  }
+  .hideBarMenu {
+    position: absolute;
+    left: 183px;
+    bottom: 753px;
+    background-color: #FFF;
+    padding: 10px 0 0 5px;
+    border-radius: 2%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .hideBarMenu li {
+    margin: 5px 0;
+  }
+  .hideBarMenu a {
+    font-size: 2.8rem;
+  }
+  input[type="checkbox"]:checked ~ .hideBarMenu {
+    position: absolute;
+    left: 183px;
+    bottom: 900px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  input[type="checkbox"]:hover ~ .fa-bars,
+  input[type="checkbox"]:focus ~ .fa-bars {
+    color: #53A2FF;
+  }
+  .aboutContentBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutImgBox {
+    width: 50%;
+  }
+  .aboutParaBox {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .aboutParaBox p {
+    padding-bottom: 50px;
+  }
+  .portfolioContentBox,
+  .project1DetailBox,
+  .project3DetailBox,
+  .project6DetailBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .project1DetailBox,
+  .project3DetailBox,
+  .project6DetailBox {
+    margin-bottom: 30px;
+  }
+  .project1ImgBox,
+  .project3ImgBox {
+    margin-bottom: 70px;
+  }
+  .project1DetailBox,
+  .project3DetailBox,
+  .project6DetailBox p {
+    text-align: center;
+  }
+  .project6ImgBox {
+    margin-bottom: 150px;
+  }
+  .project3DetailBox h5 {
+    line-height: 6rem;
+  }
+  .contactDetailBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .contactDetailBox div {
+    text-align: center;
+    width: 100%;
+  }
+  .contactDetailBox p {
+    text-align: center;
+  }
+  .contactDetailBox i {
+    font-size: 5rem;
+    width: 70px;
+    height: 100px;
+  }
+  form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3.5rem;
+  }
+  .aboutImgBox {
+    width: 80%;
+  }
+  form {
+    width: 100%;
+  }
+  .project1DetailBox h5 {
+    line-height: 6rem;
+  }
+  .project1ImgBox,
+  .project3ImgBox,
+  .project6ImgBox {
+    width: 250px;
+  }
 }
