@@ -1,11 +1,15 @@
 // Media Query (max-width: 1087px) Styles
 
 @media (max-width: 1087px) {
+    
+    .wrapper {
+        max-width: 400px;
+    }
 
     // Bars Icon
     .fa-bars {
         display: block;
-        left: 921px;
+        right: 20px;
         bottom: 680px;
         font-size: 6rem;
         color: $secondary;
@@ -19,7 +23,7 @@
         opacity: 0;
         width: 87px;
         height: 87px;
-        left: 904px;
+        right: 20px;
         bottom: 676px;
         z-index: 100;    
         position: fixed;
@@ -28,10 +32,12 @@
     // ul containing nav li's
     .hideBarMenu {
         position: absolute;
-        left: 183px;
-        bottom: 753px;
+        right: 0px;
+        bottom: 430px;
         background-color: $secondary;
         padding: 10px 0 0 5px;
+        display: flex;
+        flex-direction: column;
         border-radius: 2%;
         position: fixed;
         transition: all 1s ease;
@@ -48,8 +54,8 @@
     // when input check/uncheck toggle .hideBarMenu 
     input[type="checkbox"]:checked ~ .hideBarMenu {
         position: absolute;
-        left: 183px;
-        bottom: 900px;
+        right: 0px;
+        bottom: 5000px;
         transition: all 1s ease;
 
     }
@@ -196,10 +202,6 @@
     .project6ImgBox {
         width: 250px;
     }
-
-    // .project6ImgBox {
-    //     margin-bottom: 50px;
-    // }
 
     // Down Scroll Styles 
 

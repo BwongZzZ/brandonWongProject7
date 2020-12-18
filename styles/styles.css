@@ -791,9 +791,12 @@ footer p {
 }
 
 @media (max-width: 1087px) {
+  .wrapper {
+    max-width: 400px;
+  }
   .fa-bars {
     display: block;
-    left: 921px;
+    right: 20px;
     bottom: 680px;
     font-size: 6rem;
     color: #FFF;
@@ -805,17 +808,24 @@ footer p {
     opacity: 0;
     width: 87px;
     height: 87px;
-    left: 904px;
+    right: 20px;
     bottom: 676px;
     z-index: 100;
     position: fixed;
   }
   .hideBarMenu {
     position: absolute;
-    left: 183px;
-    bottom: 753px;
+    right: 0px;
+    bottom: 430px;
     background-color: #FFF;
     padding: 10px 0 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 2%;
     position: fixed;
     -webkit-transition: all 1s ease;
@@ -829,8 +839,8 @@ footer p {
   }
   input[type="checkbox"]:checked ~ .hideBarMenu {
     position: absolute;
-    left: 183px;
-    bottom: 900px;
+    right: 0px;
+    bottom: 5000px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
   }
