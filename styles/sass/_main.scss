@@ -254,9 +254,9 @@ input[type="submit"]:focus {
 
 // Down Scroll Styles
 
-.downSkills,
-.downPortfolio,
-.downContact{
+.aboutParaBox .downSkills,
+.aboutParaBox .downPortfolio,
+.aboutParaBox .downContact {
     color: $primary;
     font-size: 3rem;
 }

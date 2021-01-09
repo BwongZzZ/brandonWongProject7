@@ -403,7 +403,6 @@ nav a:focus,
 nav i:hover,
 nav i:focus {
   color: #53A2FF;
-  border-bottom: #53A2FF solid 7px;
 }
 
 input[type="checkbox"],
@@ -739,9 +738,9 @@ input[type="submit"]:focus {
   border: #53A2FF 1px solid;
 }
 
-.downSkills,
-.downPortfolio,
-.downContact {
+.aboutParaBox .downSkills,
+.aboutParaBox .downPortfolio,
+.aboutParaBox .downContact {
   color: #53A2FF;
   font-size: 3rem;
 }
