@@ -254,10 +254,6 @@ p {
   line-height: 3rem;
 }
 
-* {
-  border: red 3px red;
-}
-
 body {
   background-color: #222222;
 }
@@ -836,6 +832,7 @@ footer p {
     position: fixed;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+    z-index: 100;
   }
   .hideBarMenu li {
     margin: 5px 0;
