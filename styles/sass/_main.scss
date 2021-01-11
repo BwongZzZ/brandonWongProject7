@@ -254,15 +254,16 @@ input[type="submit"]:focus {
 
 // Down Scroll Styles
 
-.aboutParaBox .downSkills,
-.aboutParaBox .downPortfolio,
-.aboutParaBox .downContact {
+.downAbout,
+.downSkills,
+.downPortfolio,
+.downContact {
     color: $primary;
     font-size: 3rem;
 }
 
 .downAbout {
-    font-size: 3rem;
+    // font-size: 3rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -276,6 +277,7 @@ input[type="submit"]:focus {
 .downContact {
     margin-top: 50px;
 }
+
 
 // backToTop Styles
 

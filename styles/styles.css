@@ -442,6 +442,10 @@ input[type="checkbox"],
   padding: 10px;
 }
 
+.hideBarMenu span {
+  color: #7F7F7F;
+}
+
 .aboutContentBox {
   margin-bottom: 100px;
 }
@@ -738,15 +742,15 @@ input[type="submit"]:focus {
   border: #53A2FF 1px solid;
 }
 
-.aboutParaBox .downSkills,
-.aboutParaBox .downPortfolio,
-.aboutParaBox .downContact {
+.downAbout,
+.downSkills,
+.downPortfolio,
+.downContact {
   color: #53A2FF;
   font-size: 3rem;
 }
 
 .downAbout {
-  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
